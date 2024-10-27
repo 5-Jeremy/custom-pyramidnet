@@ -1,0 +1,4 @@
+data_dir: 'cifar-10-batches-py/'
+train_split_ratio: 1.0 # The ratio of the training data to use for training rather than validation
+save_dir: 'results/'
+eval_chkpt: 'eval_chkpts/model-170.ckpt' # Either the path to a specific checkpoint or the path to a directory containing checkpoints (if specifying a directory, be sure to end with /)

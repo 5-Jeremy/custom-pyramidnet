@@ -1,0 +1,10 @@
+max_epoch: 200
+batch_size: 64 # Set this to 64 to reproduce the validation accuracy results
+learning_rate: 0.1 # Set this to 0.1 to reproduce the validation accuracy results
+weight_decay: 1e-4
+lr_step_size: 60 # Set this to 60 to reproduce the validation accuracy results
+lr_decay: 0.1
+# This is the epoch that augmentation starts after, not the first epoch of augmentation
+augmentation_phase_1_start_epoch: 8 # Set this to 8 to reproduce the validation accuracy results
+augmentation_phase_2_start_epoch: 60 # Set this to 60 to reproduce the validation accuracy results
+augmentation_phase_3_start_epoch: -1 # Phase 3 is used to deal with heavily corrupted images; it is not needed for general purposes
