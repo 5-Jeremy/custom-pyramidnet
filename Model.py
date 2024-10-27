@@ -234,13 +234,13 @@ class MyModel(object):
 		try:
 			self.network.load_state_dict(checkpoint_params, strict=True)
 		except RuntimeError as e:
-			model.LOG(f"Error loading checkpoint")
+			self.LOG(f"Error loading checkpoint")
 			# Avoid a wall of text in the case the checkpoint has unexpected discriminators or unexpectedly lacks them
 			if len(str(e)) > 1000:
-				model.LOG("Truncating error message due to length")
-				model.LOG(str(e)[:1000])
+				self.LOG("Truncating error message due to length")
+				self.LOG(str(e)[:1000])
 			else:
-				model.LOG(str(e))
+				self.LOG(str(e))
 			exit()
 		self.LOG("Loaded base model parameters from {}".format(checkpointfile))
 

@@ -4,4 +4,3 @@ num_classes: 10
 activation_type: 'GELU' # PReLU or ReLU or GELU
 dropout_prob: 0.2
 first_num_filters: 16
-discriminators: []
