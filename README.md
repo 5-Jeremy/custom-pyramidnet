@@ -1,4 +1,4 @@
-# pyramidnet-expert-discriminators
+# custom-pyramidnet
 
 ## Recommended Versions
 - Python 3.10.12 or above
